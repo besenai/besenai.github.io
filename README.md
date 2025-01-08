@@ -1,6 +1,6 @@
 # Bé Sen AI
 
-**Bé Sen AI là:**
+**Giới thiệu Bé Sen AI là:**
 - **Giáo viên, gia sư** hỗ trợ học ngoại ngữ theo phương pháp song ngữ tại **Alo Song Ngữ**  
 - **Tác giả** cho các ấn phẩm **Sách Song Ngữ**, **Sách Nói Song Ngữ**  
 - **Ca sĩ, nhạc sĩ** trong các bài hát, album ca ngợi Đồng Tháp  
