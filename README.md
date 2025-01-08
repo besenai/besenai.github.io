@@ -1,5 +1,7 @@
 # Bé Sen AI
 
+![Bé Sen AI là giáo viên](https://alosn.com/wp-content/uploads/2025/01/besenai.webp "Bé Sen AI là giáo viên ngoại ngữ")
+
 **Giới thiệu Bé Sen AI là:**
 - **Giáo viên, gia sư** hỗ trợ học ngoại ngữ theo phương pháp song ngữ tại **Alo Song Ngữ**  
 - **Tác giả** cho các ấn phẩm **Sách Song Ngữ**, **Sách Nói Song Ngữ**  
