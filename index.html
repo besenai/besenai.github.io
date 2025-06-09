@@ -1,0 +1,353 @@
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phong tục cưới hỏi trong văn hóa người Việt - Phước Nghiêm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .hero-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://thanhnien.mediacdn.vn/Uploaded/voba/2022_04_07/anh-4-9373.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .cta-button {
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    .author-image {
+      transition: transform 0.5s ease;
+    }
+    .author-image:hover {
+      transform: rotate(5deg) scale(1.05);
+    }
+    .quote {
+      transition: transform 0.4s ease, background-color 0.4s ease;
+    }
+    .quote:hover {
+      transform: scale(1.03);
+      background-color: rgba(255, 215, 0, 0.1);
+    }
+    /* Updated Slider styles */
+    .slider {
+      position: relative;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .slides {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      min-width: 100%;
+      width: 100%;
+      height: auto;
+      display: none; /* Hide all slides by default */
+    }
+    .slide.active {
+      display: block; /* Show only the active slide */
+    }
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .slider-nav button {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .slider-nav button:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .slider-dots {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .dot.active {
+      background: white;
+    }
+    .review-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.69);
+    }
+    .faq-item {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .faq-question {
+      cursor: pointer;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+    .faq-question:hover {
+      background-color: #f9fafb;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-answer.active {
+      max-height: 200px;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero-section h-screen flex items-center justify-center text-center text-white">
+    <div class="fade-in">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Phong tục cưới hỏi trong văn hóa người Việt</h1>
+      <p class="text-xl md:text-2xl mb-6">Một bài nghiên cứu tổng hợp về văn hóa truyền thống của Phước Nghiêm</p>
+      <a href="mailto:nphuocnghiem@gmail.com" class="cta-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">Liên hệ tác giả để mua sách</a>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 md:px-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Hình ảnh về Phong tục cưới hỏi trong văn hóa người Việt</h2>
+      <div class="slider">
+        <div class="slides">
+          <img class="slide active" src="https://besenai.github.io/author/Nguyen-Phuoc-Nghiem-Sach1.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bìa sách Mockup 1">
+          <img class="slide" src="https://besenai.github.io/author/Nguyen-Phuoc-Nghiem-Sach2.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bìa sách Mockup 2">
+          <img class="slide" src="https://besenai.github.io/author/Nguyen-Phuoc-Nghiem-Sach3.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bìa sách Mockup 3">
+        </div>
+        <div class="slider-nav">
+          <button onclick="prevSlide()">←</button>
+          <button onclick="nextSlide()">→</button>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 md:px-16 bg-white">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Về cuốn sách</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        <p>Trong dòng chảy văn hóa phong phú và lâu đời của dân tộc Việt Nam, lễ cưới (hôn lễ) luôn giữ một vị trí đặc biệt quan trọng, được xem là một trong tứ lễ – bốn nghi lễ lớn đánh dấu những bước ngoặt quan trọng trong cuộc đời mỗi con người, bên cạnh lễ tang (tang lễ), lễ mừng thọ (khánh thọ), và lễ đầy tháng/thôi nôi (sinh nhật). Dân gian xưa thường đúc kết tầm quan trọng của việc dựng vợ gả chồng qua câu nói cửa miệng: "Tậu trâu, cưới vợ, làm nhà", xem đó là ba cột mốc lớn lao, khẳng định sự trưởng thành và ổn định của một người đàn ông. Lễ cưới không đơn thuần là sự kiện hợp thức hóa mối quan hệ giữa một người nam và một người nữ, mà còn là dịp để hai gia đình, hai dòng họ chính thức công nhận sự gắn kết, thể hiện trách nhiệm và tình cảm thông qua những nghi thức trang trọng, giàu ý nghĩa.</p><br>
+
+        <p>Phong tục cưới hỏi của người Việt mang trong mình sự đa dạng và phong phú, phản ánh rõ nét đặc trưng văn hóa của từng vùng miền, từng dân tộc anh em trên dải đất hình chữ S. Từ những nghi lễ cầu kỳ, trang nghiêm theo "lục lễ" của người xưa dưới ảnh hưởng của văn hóa Trung Hoa và tư tưởng Nho giáo, cho đến những biến đổi, giản lược trong xã hội hiện đại, phong tục cưới hỏi luôn vận động, thích ứng nhưng vẫn giữ gìn những giá trị cốt lõi về tình nghĩa gia đình, lòng hiếu thảo và sự hòa hợp cộng đồng. Sự khác biệt thể hiện rõ nét qua các lễ vật, số lượng tráp hỏi, trang phục cưới, các nghi thức kiêng kỵ hay vai trò của các thành viên tham gia trong đám cưới ở miền Bắc, miền Trung, miền Nam hay trong cộng đồng các dân tộc thiểu số. Chính sự đa dạng này tạo nên một bức tranh văn hóa cưới hỏi đầy màu sắc và hấp dẫn.</p><br>
+
+        <p>Cuốn sách <b>"Phong tục cưới hỏi trong văn hóa người Việt"</b> được cấu trúc thành sáu phần chính, cùng với phần phụ lục hữu ích. Phần I sẽ cung cấp cái nhìn tổng quan về ý nghĩa, lịch sử và vị trí của lễ cưới trong văn hóa Việt, đồng thời so sánh với một số nước Á Đông. Phần II đi sâu vào các bước nghi lễ truyền thống, từ dạm ngõ đến lại mặt. Phần III tập trung phân tích các biểu tượng, lễ vật và nghi thức đặc trưng như trầu cau, mâm quả, trang phục cưới. Phần IV khám phá sự đa dạng của phong tục cưới hỏi theo từng vùng miền và các dân tộc thiểu số. Phần V bàn về những biến đổi của lễ cưới trong xã hội hiện đại dưới tác động của đô thị hóa, toàn cầu hóa và truyền thông, cũng như vấn đề bảo tồn giá trị truyền thống. Phần VI mở rộng góc nhìn qua lăng kính văn học, nghệ thuật và những câu chuyện thực tế. Cuối cùng, phần Phụ lục cung cấp từ điển thuật ngữ, hình ảnh minh họa và danh sách tài liệu tham khảo, giúp độc giả tiện tra cứu và tìm hiểu sâu hơn.</p>
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 md:px-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Trích dẫn nổi bật</h2>
+      <blockquote class="quote text-xl italic text-gray-800 border-l-4 border-yellow-500 pl-4 py-4">
+        “<b>Về tầm quan trọng của hôn nhân</b>: Câu tục ngữ "Tậu trâu, cưới vợ, làm nhà / Trong ba việc ấy lọ là khó thay"”
+      </blockquote><br>
+      <blockquote class="quote text-xl italic text-gray-800 border-l-4 border-yellow-500 pl-4 py-4">
+        “<b>Về việc lựa chọn bạn đời và sự môn đăng hộ đối</b>: Câu tục ngữ "Lấy vợ xem tông, lấy chồng xem giống", "Mua trâu xem vó, lấy vợ xem nòi"”
+      </blockquote><br>
+      <blockquote class="quote text-xl italic text-gray-800 border-l-4 border-yellow-500 pl-4 py-4">
+        “<b>Về tình nghĩa vợ chồng</b>: Vô vàn câu ca dao thể hiện tình cảm gắn bó, son sắt "Râu tôm nấu với ruột bầu / Chồng chan vợ húp gật đầu khen ngon"”
+      </blockquote><br>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 md:px-16 bg-white">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Đánh giá của độc giả</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="review-card bg-gray-50 p-6 rounded-lg shadow-md">
+          <p class="text-lg italic text-gray-700">"Cuốn sách thực sự là một kho tàng văn hóa! Tôi rất ấn tượng với cách tác giả phân tích chi tiết từng nghi lễ cưới hỏi và sự khác biệt giữa các vùng miền. Phần Phụ lục với hình ảnh minh họa giúp tôi hình dung rõ hơn về các lễ vật truyền thống. Rất đáng đọc cho những ai muốn hiểu sâu về văn hóa Việt."</p>
+          <p class="mt-4 font-bold text-gray-900">– Minh Anh, 45 tuổi</p>
+        </div>
+        <div class="review-card bg-gray-50 p-6 rounded-lg shadow-md">
+          <p class="text-lg italic text-gray-700">"Tôi đã học được rất nhiều từ cuốn sách này, đặc biệt là phần so sánh phong tục cưới hỏi Việt Nam với các nước Á Đông. Ngôn ngữ dễ hiểu, nội dung phong phú, và phần bàn về sự thay đổi trong xã hội hiện đại thực sự khiến tôi suy ngẫm về việc giữ gìn truyền thống."</p>
+          <p class="mt-4 font-bold text-gray-900">– Hoàng Nam, 40 tuổi</p>
+        </div>
+        <div class="review-card bg-gray-50 p-6 rounded-lg shadow-md">
+          <p class="text-lg italic text-gray-700">"Là một người yêu thích văn hóa dân tộc, tôi đánh giá cao sự tỉ mỉ và công phu của tác giả trong việc tái hiện các nghi lễ cưới hỏi. Phần khám phá phong tục của các dân tộc thiểu số rất độc đáo, giúp tôi trân trọng hơn sự đa dạng văn hóa của Việt Nam."</p>
+          <p class="mt-4 font-bold text-gray-900">– Thu Hà, 42 tuổi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 md:px-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center fade-in">
+      <img src="https://besenai.github.io/author/Nguyen-Phuoc-Nghiem.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nguyễn Phước Nghiêm" class="author-image w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-8">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nguyễn Phước Nghiêm</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Nguyễn Phước Nghiêm, sinh năm 1987, là một nhà nghiên cứu văn hóa người Việt Nam. Cô tốt nghiệp ngành Khoa học máy tính tại Trường Đại học Khoa học Xã hội và Nhân văn - Đại học Quốc gia Thành phố Hồ Chí Minh. Với niềm đam mê tìm hiểu các giá trị truyền thống, cô đã dành nhiều năm nghiên cứu về phong tục, tập quán của người Việt. Tác phẩm đầu tay của cô, "Phong Tục Cưới Hỏi trong Văn Hóa Người Việt", dự kiến xuất bản vào cuối năm 2025, được đánh giá cao nhờ sự phân tích sâu sắc và cách tiếp cận gần gũi, góp phần làm sáng tỏ những nét đẹp trong văn hóa hôn lễ truyền thống Việt Nam. Hiện cô tiếp tục nghiên cứu và giảng dạy về văn hóa dân tộc tại các diễn đàn học thuật.
+        </p></br>
+        <div class="flex justify-left space-x-4">
+          <a href="mailto:nphuocnghiem@gmail.com" class="social-link bg-gray-200 p-3 rounded-full" title="Email">
+            <i class="fas fa-envelope text-gray-800"></i>
+          </a>
+          <a href="https://www.facebook.com/phuoc.nghiem.723591" class="social-link bg-gray-200 p-3 rounded-full" title="Facebook">
+            <i class="fab fa-facebook-f text-gray-800"></i>
+          </a>
+          <a href="https://www.twitter.com" class="social-link bg-gray-200 p-3 rounded-full" title="Twitter">
+            <i class="fab fa-twitter text-gray-800"></i>
+          </a>
+          <a href="https://www.amazon.com" class="social-link bg-gray-200 p-3 rounded-full" title="Amazon">
+            <i class="fab fa-amazon text-gray-800"></i>
+          </a>
+          <a href="https://play.google.com" class="social-link bg-gray-200 p-3 rounded-full" title="Google Play">
+            <i class="fab fa-google-play text-gray-800"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 md:px-16 bg-white">
+    <div class="max-w-4xl mx-auto fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Câu hỏi thường gặp</h2>
+      <div class="faq-item">
+        <div class="faq-question text-lg font-semibold">
+          <span>Cuốn sách "Phong tục cưới hỏi trong văn hóa người Việt" phù hợp với đối tượng độc giả nào?</span>
+          <span>↓</span>
+        </div>
+        <div class="faq-answer text-gray-700">
+          <p>Cuốn sách phù hợp với những người yêu thích tìm hiểu văn hóa truyền thống Việt Nam, đặc biệt là các nghi lễ cưới hỏi, bao gồm sinh viên, nhà nghiên cứu văn hóa, những người chuẩn bị tổ chức đám cưới, hoặc bất kỳ ai quan tâm đến sự đa dạng văn hóa vùng miền và dân tộc thiểu số.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question text-lg font-semibold">
+          <span>Cuốn sách có cung cấp thông tin về sự thay đổi của phong tục cưới hỏi trong xã hội hiện đại không?</span>
+          <span>↓</span>
+        </div>
+        <div class="faq-answer text-gray-700">
+          <p>Có, Phần V của cuốn sách phân tích những biến đổi trong phong tục cưới hỏi dưới tác động của đô thị hóa, toàn cầu hóa và truyền thông, đồng thời thảo luận về việc bảo tồn các giá trị truyền thống trong bối cảnh hiện đại.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question text-lg font-semibold">
+          <span>Khách hàng có thể mua sách ở đâu, như thế nào?</span>
+          <span>↓</span>
+        </div>
+        <div class="faq-answer text-gray-700">
+          <p>Hiện tại, quyển sách (nghiên cứu này) chưa xuất bản chính thức, chúng tôi đang làm việc với các bên xuất bản điện tử như <b>Google Play Books</b> và <b>Amazon Books</b> để phát hành ấn bản điện tử, để từ đó có thể tiếp thu ý kiến, phản hồi từ đọc giả để hoàn thiện sách. Sách dự kiến sẽ xuất bản ấn phẩm in hoàn chỉnh vào cuối năm 2025. Hiện tại để mua sách, đọc giả chỉ có thể mua sách trực tiếp từ tác giả bằng cách gửi mail vào địa chỉ <i>nphuocnghiem@gmail</i>, tác giả sẽ hồi âm và hướng dẫn mua sách.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="buy-now" class="py-16 px-4 md:px-16 bg-yellow-500 text-center text-white">
+    <div class="fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Sở hữu "Phong tục cưới hỏi trong văn hóa người Việt" ngay hôm nay!</h2>
+      <p class="text-lg mb-6">Đừng bỏ lỡ cơ hội tìm hiểu những nét văn hóa độc đáo trong cưới hỏi của người Việt qua quyển sách nghiên cứu này.</p>
+      <a href="mailto:nphuocnghiem@gmail.com" class="cta-button bg-white text-yellow-500 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition duration-300">LIÊN HỆ MUA SÁCH</a>
+    </div>
+  </section>
+
+  <footer class="py-8 px-4 bg-gray-800 text-white text-center">
+    <p>© 2025 Phong tục cưới hỏi trong văn hóa người Việt - Nguyễn Phước Nghiêm. Khiếu nại về bản quyền, liên hệ: nphuocnghiem@gmail.com</p>
+  </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const fadeIns = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      fadeIns.forEach(element => observer.observe(element));
+    });
+
+    // Updated Slider functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+      slides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === currentSlide);
+      });
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlider();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateSlider();
+    }
+
+    // Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000);
+
+    // FAQ accordion functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
